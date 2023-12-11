@@ -1,0 +1,16 @@
+.father {
+    display: grid;
+    grid-template-columns: 100px 200px 50px;
+    grid-template-rows: 200px 100px;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.child{
+    background-color: coral;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
