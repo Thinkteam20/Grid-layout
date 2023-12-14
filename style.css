@@ -8,12 +8,17 @@ body {
         /* tell grid to have same ratio and size */
         height: 100vh;
         /* After same layout */
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr; */
 
-        grid-template-areas: "a a a a"
+        /* grid-template-areas: "a a a a"
                             "b b b c"
-                            "d d d d"
+                            "d d d d" */
+        
+        /* other way 💡 */
+        grid-template: "a a a a" 1fr
+                        "b b b c" 2fr
+                        "d d d d" 1fr / 1fr 1fr 1fr 1fr
 }
 
 header {
