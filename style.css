@@ -7,31 +7,31 @@ body {
         display: grid;
         /* tell grid to have same ratio and size */
         height: 100vh;
+        /* After same layout */
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
 
-        grid-template-areas: "header header header header"
-                            "content content content menu"
-                            "content content content menu"
-                            "footer footer footer footer";
+        grid-template-areas: "a a a a"
+                            "b b b c"
+                            "d d d d"
 }
 
 header {
     background-color: aqua;
-    grid-area: header;
+    grid-area: a;
 }
 
 section {
     background-color: coral;
-    grid-area: content;
+    grid-area: b;
 }
 
 aside {
     background-color: forestgreen;
-    grid-area: menu;
+    grid-area: c;
 }
 
 footer {
     background-color: deeppink;
-    grid-area: footer;
+    grid-area: d;
 }
