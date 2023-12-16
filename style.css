@@ -12,8 +12,11 @@
     /* ✅ Inner each grid item control */
 
     /* default stretch - it will only work when the child item width is 0 */
-    justify-items: end;
-    align-items: end;
+    /* justify-items: end;
+    align-items: end; */
+
+    /* shortCut */
+    place-items: end center;
 }
 
 .child{
@@ -25,4 +28,13 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
+}
+/* make the child move individually */
+.child:nth-child(6){
+    background-color: teal;
+    /* align-self: start;
+    justify-self: end; */
+
+    place-self: start center;
+    grid-column: span 2;
 }
