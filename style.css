@@ -6,24 +6,22 @@
     grid-template-rows: repeat(2, 1fr);
 
     grid-auto-rows: 1fr;
-    /* 
-        💡his property allows me to specify what 
-        is the size of the extra rows 
-        that my grid container might have. 
-    */
-
+    grid-auto-columns: 1fr;
     grid-auto-flow: column;
-    /* by default it grows automatically to row - ✅ horizontally */
-    grid-auto-columns: 0.5fr;
-    /* 
-        any extra conten automatically added ✅ vertically - column.
-    */
+
+    /* ✅ Inner each grid item control */
+
+    /* default stretch - it will only work when the child item width is 0 */
+    justify-items: end;
+    align-items: end;
 }
 
 .child{
     background-color: coral;
+    width: 50px;
+    height: 50px;
     display: flex; 
-    color: whit e;
+    color: white;
     justify-content: center;
     align-items: center;
     font-size: 24px;
