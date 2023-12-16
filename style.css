@@ -2,11 +2,15 @@
     display: grid;
     min-height: 100vh;
     gap: 10px;
-    /* max-content -> grows based on the contents size */
-    /* grid-template-columns: 1fr max-content 1fr; */
 
-    /* min size will be based on longest word */
-    grid-template-columns: 1fr min-content 1fr; 
+    /* 
+        it should not never shrink less than 250px 
+        250px up always 1fr
+    */
+    /* grid-template-columns: 1fr minmax(250px, 1fr) 1fr;  */
+
+    grid-template-columns: repeat(3, minmax(300px, 350px));
+
     background-color: blue;
 }
 
