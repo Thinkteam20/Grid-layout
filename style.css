@@ -16,19 +16,18 @@
     font-size: 24px;
 }
 
-.child:last-child {
-    background-color: aquamarine;
-    /* grid-column: 2 / -1; */
-    grid-column: potato / brocoli ;
-}
-
-
-.child:last-child {
-    background-color: aquamarine;
-    grid-column: 2 / -1;
-}
-
 .child:first-child {
-    background-color: red;
-    grid-row: korea / australia ;
+    /* 
+        grid-row-start: 1;
+        grid-row-end: -1;
+        grid-row: korea;
+        grid-row: span 2;
+    */
+    background-color: khaki;
+}
+
+.child:last-child {
+    background-color: turquoise;
+    /* grid-column: span 2; */
+    grid-column: potato/ span 2;
 }
