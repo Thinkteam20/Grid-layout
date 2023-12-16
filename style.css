@@ -2,14 +2,12 @@
     display: grid;
     min-height: 100vh;
     gap: 10px;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(2, 100px);
-    background-color: lightblue;
+    /* max-content -> grows based on the contents size */
+    /* grid-template-columns: 1fr max-content 1fr; */
 
-    /* this only work when the container has an extra space. */
-    /* justify-content: center;
-    align-content: center; */
-    place-content: center end;
+    /* min size will be based on longest word */
+    grid-template-columns: 1fr min-content 1fr; 
+    background-color: blue;
 }
 
 .child{
@@ -17,6 +15,6 @@
     display: flex; 
     color: white;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     font-size: 28px;
 }
